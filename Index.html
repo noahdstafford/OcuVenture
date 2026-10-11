@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>OcuVenture | Independent bus travel for people with visual impairments</title>
+<style>
+:root{--em:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTI0IDE1MzAiPjxwYXRoIGZpbGw9IiNmZmZmZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTUxNCwxNDgyQzUwOCwxNDgwIDUwMSwxNDc4IDQ3OCwxNDcwQzQ3NSwxNDY4IDQ3MCwxNDY3IDQ2OCwxNDY2QzQ2NiwxNDY1IDQ1OCwxNDYxIDQ1MCwxNDU4QzQxMywxNDQyIDM2NiwxNDE2IDMzMiwxMzkyQzI3NywxMzU0IDE5OCwxMjgyIDE5OCwxMjcxQzE5OCwxMjcwIDE5OCwxMjcwIDIxNCwxMjc0QzIyNywxMjc4IDI1MSwxMjgxIDI1NCwxMjc5QzI1OSwxMjc3IDI1OSwxMjc2IDI1OSwxMjQxQzI1OSwxMjAwIDI2MSwxMTk0IDI3OSwxMTg2QzI5MCwxMTgxIDM1MywxMTgyIDM2MiwxMTg3QzM3NywxMTk3IDM3OCwxMjAwIDM3OCwxMjQ0QzM3OCwxMjg4IDM3NiwxMjg1IDQwNywxMjgxQzQxNCwxMjgwIDQyNSwxMjc5IDQzMiwxMjc5QzQzOCwxMjc4IDQ0NiwxMjc3IDQ1MSwxMjc2QzQ1NSwxMjc1IDQ2NSwxMjczIDQ3MiwxMjczQzQ3OSwxMjcyIDQ4NiwxMjcwIDQ4OSwxMjcwQzQ5MSwxMjY5IDQ5NiwxMjY4IDUwMSwxMjY3QzUwNSwxMjY2IDUxMiwxMjY1IDUxNywxMjY0QzUyMiwxMjYyIDUyNywxMjYxIDUzMCwxMjYwQzUzMiwxMjYwIDUzNywxMjU5IDU0MSwxMjU3QzU0NSwxMjU2IDU0OSwxMjU1IDU1MCwxMjU1QzU1MSwxMjU1IDU1NiwxMjU0IDU2MSwxMjUyQzU2NiwxMjUwIDU3MSwxMjQ5IDU3NCwxMjQ4QzU4MiwxMjQ2IDU4NCwxMjQyIDU3OSwxMjMzQzU3NSwxMjI0IDU3NiwxMjA0IDU4MSwxMTk2QzU4OCwxMTg0IDU5MCwxMTg0IDYzNSwxMTgzQzY4MSwxMTgzIDY3OSwxMTgzIDY5MSwxMTkzQzY5OCwxMTk5IDY5OSwxMTk5IDcxMCwxMTk1Qzc0OSwxMTgwIDc1MywxMTc5IDc1NSwxMTg0Qzc1NywxMTg3IDc2NSwxMjA5IDc2NywxMjE3Qzc2OCwxMjE5IDc3MiwxMjMxIDc3NiwxMjQ0Qzc4NywxMjc2IDc4NywxMjc0IDc3MiwxMjg0QzcxOCwxMzE5IDY3NCwxMzUwIDY0NCwxMzc0QzYwNCwxNDA1IDU3MSwxNDM1IDU0NywxNDYxQzUyNCwxNDg3IDUyNiwxNDg2IDUxNCwxNDgyek01MDQsMTQ0MUM1MDcsMTQzOSA1MDgsMTQzNiA1MDYsMTQyOUM1MDYsMTQyNSA1MDUsMTQxOCA1MDQsMTQxM0M1MDMsMTQwNyA1MDIsMTQwMCA1MDEsMTM5OEM1MDEsMTM5NSA0OTksMTM4NiA0OTksMTM3OUM0OTYsMTM1OCA0OTQsMTM1NSA0ODAsMTM1NUM0NjYsMTM1NSA0NjQsMTM1OCA0NjIsMTM3N0M0NjEsMTM4NCA0NjAsMTM5MyA0NTksMTM5OEM0NTMsMTQyOSA0NTMsMTQ0MCA0NjAsMTQ0MkM0NjMsMTQ0MyA1MDIsMTQ0MiA1MDQsMTQ0MXpNNDkwLDEzMzBDNDkyLDEzMjcgNDkyLDEzMjUgNDkxLDEzMTVDNDg3LDEyODcgNDY4LDEyOTQgNDY4LDEzMjRDNDY4LDEzMzAgNDcyLDEzMzIgNDgwLDEzMzJDNDg2LDEzMzIgNDg3LDEzMzIgNDkwLDEzMzB6TTE3NSwxMjQzQzE3MiwxMjQwIDE2NywxMjM0IDE2NCwxMjMwQzE2MiwxMjI3IDE1OCwxMjIyIDE1NSwxMjE4QzEzOSwxMTk5IDEwOCwxMTUyIDk5LDExMzVDOTgsMTEzMiA5MywxMTIyIDg4LDExMTNDODMsMTEwNCA3OSwxMDk3IDc5LDEwOTZDNzksMTA5NiA3NiwxMDkwIDczLDEwODRDNzAsMTA3OCA2NywxMDcxIDY2LDEwNjlDNjYsMTA2NiA2NSwxMDY0IDY0LDEwNjNDNjMsMTA2MiA2MCwxMDU2IDU0LDEwMzhDNTAsMTAzMCA0OSwxMDI2IDQ5LDEwMTlDNDgsMTAxMyA0NywxMDA4IDQ2LDEwMDRDNDIsOTkzIDMyLDk2MSAzMCw5NTNDMzAsOTUxIDI5LDk0NyAyOCw5NDRDMjcsOTQwIDI1LDkzMyAyNCw5MjlDMjQsOTI0IDIyLDkxOSAyMiw5MThDMjEsOTE3IDIwLDkxMCAxOSw5MDNDMTgsODk1IDE2LDg4NiAxNiw4ODNDMTUsODc5IDE0LDg3MSAxMyw4NjVDMTIsODU4IDExLDg0OCAxMCw4NDJDNSw4MTEgNSw3MDcgMTAsNjc2QzExLDY3MCAxMiw2NjIgMTIsNjU3QzEzLDY1MiAxNCw2NDMgMTYsNjM2QzE3LDYzMCAxOCw2MjEgMTksNjE2QzIwLDYxMiAyMSw2MDYgMjIsNjAzQzIyLDYwMSAyNCw1OTUgMjUsNTkwQzI1LDU4NSAyNyw1NzggMjgsNTc1QzI5LDU3MSAzMCw1NjcgMzAsNTY0QzMxLDU2MiAzMiw1NTYgMzQsNTUxQzM1LDU0NiAzOCw1MzcgNDAsNTMwQzQyLDUyNCA0NSw1MTYgNDYsNTEyQzQ4LDUwOCA0OSw1MDQgNDksNTAzQzQ5LDUwMiA1OCw0NzkgNjYsNDU4QzEzOCwyODQgMjg0LDE0MSA0NjgsNjVDNDk4LDUzIDUwNiw1MCA1NTUsMzRDNTU5LDMzIDU2NSwzMSA1NjksMzFDNTczLDMwIDU3OSwyOCA1ODMsMjdDNTk0LDI0IDYxNiwxOSA2MjQsMThDNjI3LDE3IDYzMywxNiA2MzYsMTVDNjM4LDE1IDY0NywxMyA2NTQsMTNDNjYxLDEyIDY3MCwxMCA2NzQsMTBDNjc4LDkgNjkzLDcgNzA4LDdDNzM0LDUgNzUwLDMgNzUyLDFDNzU0LC0xIDc4OCwtMCA3OTAsMkM3OTIsNCA4MDEsNSA4MjQsNkM4NTEsNyA4NTcsOCA4NjYsMTBDODcxLDEwIDg4MCwxMiA4ODYsMTNDODkyLDEzIDkwMCwxNSA5MDIsMTVDOTA1LDE2IDkxMiwxOCA5MTcsMThDOTIyLDE5IDkyOSwyMSA5MzIsMjJDOTM2LDIzIDk0MSwyNCA5NDUsMjVDOTQ5LDI2IDk1MywyNyA5NTQsMjdDOTU2LDI4IDk2MCwyOSA5NjMsMzBDOTcyLDMyIDk5NSwzOSAxMDIxLDQ4QzEwODEsNjkgMTE2MywxMTUgMTIxOCwxNTlDMTI1NSwxODggMTI4NywyMTcgMTI5NywyMzBDMTMwMCwyMzQgMTMwNCwyNDAgMTMwNywyNDJDMTMwOSwyNDUgMTMxNSwyNTUgMTMyMCwyNjVDMTMyNSwyNzUgMTMyOSwyODMgMTMzMCwyODRDMTMzMiwyODkgMTMzNywzMDAgMTMzOCwzMDRDMTMzOCwzMDYgMTM0MCwzMTAgMTM0MSwzMTNDMTM0MywzMTcgMTM0NCwzMjEgMTM0NCwzMjJDMTM0NCwzMjQgMTM0NSwzMjggMTM0NywzMzFDMTM0OCwzMzUgMTM0OSwzMzkgMTM1MCwzNDVDMTM1MCwzNTEgMTM1MSwzNTggMTM1MywzNjJDMTM1NiwzNzMgMTM1Niw0MTAgMTM1Myw0MThDMTM1Miw0MjAgMTM1MCw0MjYgMTM1MCw0MzBDMTM0OCw0NDkgMTM0NSw0NDkgMTMzNSw0MzFDMTMxOSw0MDIgMTI4OSwzNTggMTI2NywzMzFDMTI2MSwzMjUgMTI1NSwzMTcgMTI1MywzMTVDMTIyMCwyNzUgMTE1MywyMTcgMTA5OCwxODNDMTA3OCwxNzEgMTAyNiwxNDMgMTAyMywxNDNDMTAyMiwxNDMgMTAxNiwxNDEgMTAxMCwxMzhDOTkwLDEyOSA5ODEsMTI2IDk1NiwxMThDOTMwLDEwOSA5MDUsMTAzIDg5NiwxMDFDODkyLDEwMCA4ODYsOTkgODgyLDk4Qzg3OSw5NyA4NzMsOTYgODY5LDk2Qzg2NSw5NSA4NTYsOTQgODQ5LDkyQzgyMiw4NyA3NTMsODQgNzI1LDg2QzcxNCw4NyA2OTgsODggNjg5LDg5QzY4MCw5MCA2NjgsOTEgNjYyLDkyQzY1Nyw5MyA2NDgsOTQgNjQzLDk1QzYzOCw5NiA2MjksOTcgNjIzLDk4QzYxNywxMDAgNjA5LDEwMiA2MDYsMTAyQzU4NiwxMDYgNTQ2LDExOCA1MjcsMTI1QzUyMiwxMjcgNTE2LDEyOSA1MTIsMTMxQzUwOCwxMzIgNTAxLDEzNSA0OTQsMTM3QzQ4OCwxNDAgNDgxLDE0MyA0NzgsMTQ0QzQ2MywxNTAgNDE2LDE3NCAzOTIsMTkwQzMxMiwyMzkgMjMzLDMxMyAxODUsMzg0QzE4MSwzODkgMTc2LDM5NiAxNzQsNDAwQzE1Nyw0MjQgMTIyLDQ4OCAxMTMsNTExQzExMyw1MTMgMTEwLDUxOSAxMDcsNTI2QzEwNSw1MzIgMTAyLDUzOSAxMDEsNTQyQzEwMCw1NDUgOTcsNTUyIDk1LDU1OEM5MSw1NjkgOTEsNTcxIDg2LDU4NkM3OSw2MDkgNzgsNjEzIDc3LDYxOEM3Nyw2MjAgNzYsNjI2IDc0LDYzMEM3Myw2MzQgNzIsNjQwIDcxLDY0NEM3MCw2NDkgNjksNjU1IDY4LDY2MEM2Nyw2NjQgNjYsNjcyIDY1LDY3NkM2NCw2ODEgNjMsNjg4IDYzLDY5MUM2MSw2OTkgNjAsNzAzIDU5LDcyMUM1OCw3MzAgNTcsNzQxIDU2LDc0N0M1Myw3NjkgNTQsODIzIDU3LDg0M0M1OCw4NDYgNTgsODU2IDU5LDg2NkM2MCw4NzYgNjEsODg3IDYyLDg5MkM2Myw4OTcgNjQsOTA1IDY1LDkxMEM2Niw5MTQgNjcsOTIzIDY4LDkyOEM3MCw5MzQgNzIsOTQyIDcyLDk0NkM3NSw5NTkgNzksOTczIDg3LDEwMDBDODksMTAwNiA5MSwxMDE0IDkyLDEwMTZDOTYsMTAyNiA5OCwxMDM1IDk4LDEwMzhDOTgsMTA0MSAxMDAsMTA0NyAxMDEsMTA1MkMxMDUsMTA2MyAxMDcsMTA2OSAxMDksMTA3NkMxMTIsMTA4MyAxMTUsMTA5MyAxMjIsMTExMEMxMjUsMTExOSAxMjksMTEzMCAxMzEsMTEzNEMxMzMsMTEzOSAxMzYsMTE0NyAxMzgsMTE1M0MxNDAsMTE1OSAxNDMsMTE2NSAxNDMsMTE2N0MxNDQsMTE2OSAxNDYsMTE3NCAxNDksMTE3OUMxNTEsMTE4NCAxNTQsMTE5MCAxNTUsMTE5M0MxNTYsMTE5NiAxNTgsMTE5OSAxNTgsMTE5OUMxNTksMTIwMSAxODMsMTI0OCAxODMsMTI0OUMxODMsMTI1MSAxODEsMTI1MCAxNzUsMTI0M3pNOTM2LDEwOThDOTIxLDEwOTUgOTEzLDEwODQgOTEzLDEwNjlDOTEzLDEwNTcgOTEyLDEwNTcgOTU0LDk5NkMxMDE1LDkwNiAxMDE1LDkwNyAxMDIwLDg4NUMxMDIxLDg4MSAxMDIyLDg3NiAxMDIzLDg3MkMxMDIzLDg2OSAxMDI1LDg2NCAxMDI1LDg2MkMxMDI4LDg0OCAxMDMzLDgyNiAxMDM1LDgyMEMxMDM1LDgxNyAxMDM3LDgxMSAxMDM4LDgwN0MxMDM4LDgwMyAxMDQwLDc5NSAxMDQxLDc5MEMxMDQzLDc4NiAxMDQ0LDc3OCAxMDQ1LDc3NEMxMDQ2LDc3MCAxMDQ3LDc2NSAxMDQ4LDc2M0MxMDQ4LDc2MCAxMDUwLDc1NCAxMDUwLDc0OUMxMDUxLDc0NCAxMDUzLDczNyAxMDU0LDczM0MxMDU1LDczMCAxMDU2LDcyNCAxMDU3LDcyMEMxMDU4LDcxNiAxMDU5LDcxMSAxMDU5LDcwOUMxMDYwLDcwNyAxMDYxLDcwMiAxMDYyLDY5OEMxMDYzLDY5NCAxMDY0LDY4NiAxMDY1LDY4MkMxMDY3LDY3NyAxMDY4LDY3MSAxMDY5LDY2OEMxMDcyLDY0NCAxMTA4LDYyOSAxMTMyLDY0MUMxMTQ2LDY0NyAxMTUyLDY1NCAxMTYwLDY3M0MxMTc1LDcwOSAxMTc5LDcxNCAxMjE0LDc0N0MxMjQ4LDc4MSAxMjQ3LDc4MCAxMjQ4LDc5MEMxMjQ5LDgwNiAxMjQwLDgxNiAxMjI1LDgxNkMxMjE2LDgxNiAxMjEyLDgxNCAxMjAwLDgwM0MxMTk0LDc5OCAxMTg3LDc5MSAxMTgzLDc4OEMxMTgwLDc4NSAxMTcyLDc3OCAxMTY2LDc3MkMxMTUxLDc1OCAxMTQ4LDc1OCAxMTQ2LDc3M0MxMTQ1LDc3OCAxMTQzLDc4NSAxMTQyLDc4OUMxMTQxLDc5MiAxMTQwLDc5OSAxMTM5LDgwNEMxMTM4LDgwOCAxMTM3LDgxMyAxMTM3LDgxNUMxMTM1LDgyMSAxMTM3LDgyOSAxMTQ1LDg0NkMxMTQ3LDg1MSAxMTUwLDg1OCAxMTUxLDg2MEMxMTUyLDg2MyAxMTU1LDg2OSAxMTU3LDg3NEMxMTU5LDg3OSAxMTYxLDg4NSAxMTYzLDg4OUMxMTY0LDg5MiAxMTY2LDg5NiAxMTY2LDg5N0MxMTY4LDkwMSAxMTczLDkxNSAxMTc1LDkyM0MxMTc2LDkyNyAxMTc4LDkzMSAxMTc4LDkzMkMxMTc5LDkzMyAxMTgwLDkzOCAxMTgxLDk0M0MxMTgzLDk0OCAxMTg0LDk1NCAxMTg1LDk1NkMxMTg5LDk2NiAxMTkxLDk3NSAxMTk0LDk4MkMxMTk1LDk4NyAxMTk2LDk5MyAxMTk3LDk5NUMxMTk4LDk5NyAxMjAwLDEwMDQgMTIwMiwxMDEwQzEyMDQsMTAxNSAxMjA2LDEwMjQgMTIwOCwxMDMwQzEyMTcsMTA2MCAxMjE2LDEwNjggMTIwNCwxMDgwQzExODcsMTA5NSAxMTU4LDEwODUgMTE1MywxMDY0QzExNTIsMTA2MSAxMTUxLDEwNTUgMTE1MCwxMDUyQzExNDgsMTA0OCAxMTQ2LDEwMzkgMTE0NCwxMDMyQzExNDAsMTAyMSAxMTM4LDEwMTQgMTEzMiw5OTZDMTEzMCw5OTEgMTEyNiw5NzkgMTEyMyw5NjhDMTExMSw5MjkgMTEwMCw5MDIgMTA5NSw4OTlDMTA5Miw4OTcgMTA4OCw4OTkgMTA4Niw5MDVDMTA4MSw5MjEgMTA2OCw5NDIgMTA1Myw5NjVDMTA0NCw5NzggMTAyOSwxMDAwIDEwMjAsMTAxNEMxMDEwLDEwMjggMTAwMCwxMDQ0IDk5NiwxMDQ4Qzk5MywxMDUzIDk4NiwxMDY1IDk4MCwxMDczQzk2MywxMDk3IDk1NCwxMTAzIDkzNiwxMDk4ek0xMzU4LDEwNTNDMTM1NiwxMDUxIDEzNTEsMTA0NSAxMzQ4LDEwMzhDMTMzMywxMDExIDEzMjQsOTk2IDEzMTgsOTg2QzEzMTUsOTc5IDEzMDksOTcwIDEzMDYsOTY0QzEzMDIsOTU3IDEyOTcsOTQ4IDEyOTQsOTQyQzEyOTAsOTM3IDEyODUsOTI4IDEyODIsOTIyQzEyNzgsOTE1IDEyNzMsOTA2IDEyNjksOTAwQzEyNjQsODkwIDEyNTUsODc0IDEyNDIsODUyQzEyMzUsODM5IDEyMzQsODMzIDEyNDEsODI4QzEyNDksODIzIDEyNTUsODI3IDEyNjUsODQ2QzEyNjgsODUyIDEyNzQsODYxIDEyNzYsODY2QzEyNzksODcxIDEyODUsODgxIDEyODksODg4QzEyOTMsODk1IDEyOTgsOTA0IDEzMDAsOTA2QzEzMDEsOTA5IDEzMDYsOTE3IDEzMTAsOTI0QzEzMTYsOTM1IDEzMjAsOTQyIDEzMzQsOTY4QzEzMzgsOTc0IDEzNDQsOTg1IDEzNDgsOTkxQzEzNTEsOTk3IDEzNTUsMTAwNCAxMzU3LDEwMDhDMTM2MSwxMDEzIDEzNjgsMTAyNiAxMzczLDEwMzZDMTM4MSwxMDUwIDEzNjksMTA2MyAxMzU4LDEwNTN6TTExMzIsNjE5QzEwNzAsNjAyIDEwNzAsNTEyIDExMzMsNDk3QzExOTAsNDg0IDEyMzMsNTQ2IDEyMDAsNTk0QzExODYsNjE1IDExNTcsNjI1IDExMzIsNjE5eiIvPjxwYXRoIGZpbGw9IiNjOWNlZDQiIGQ9Ik04MjEsMTI1MEM4MTksMTI0OCA4MTgsMTI0NCA4MTcsMTI0MkM4MTYsMTIzOSA4MTUsMTIzNSA4MTQsMTIzMkM4MTMsMTIyOSA4MTEsMTIyMyA4MTAsMTIyMEM4MDksMTIxNiA4MDcsMTIxMiA4MDcsMTIxMEM4MDYsMTIwOSA4MDUsMTIwNiA4MDUsMTIwNEM4MDQsMTIwMiA4MDMsMTE5OCA4MDIsMTE5NEM3OTEsMTE2NiA3OTEsMTE2MyA4MDksMTE1OEM4MTMsMTE1OCA4MjAsMTE1NiA4MjQsMTE1NUM4MjgsMTE1MyA4MzMsMTE1MiA4MzUsMTE1MUM4MzcsMTE1MSA4NDEsMTE1MCA4NDQsMTE0OUM4NDgsMTE0OCA4NTQsMTE0NiA4NTgsMTE0NkM4NjEsMTE0NSA4NjgsMTE0MyA4NzMsMTE0MkM4ODcsMTEzOSA5MDQsMTEzNSA5MTQsMTEzM0M5MjAsMTEzMyA5MjcsMTEzMSA5MjksMTEzMEM5MzIsMTEzMCA5MzksMTEyOSA5NDMsMTEyOEM5NDgsMTEyNyA5NTUsMTEyNiA5NTgsMTEyNUM5NjIsMTEyNSA5NzIsMTEyMyA5ODEsMTEyMkM5ODksMTEyMSA5OTksMTExOSAxMDAzLDExMTlDMTAwNywxMTE4IDEwMTUsMTExNyAxMDIyLDExMTZDMTAyOCwxMTE1IDEwMzksMTExNCAxMDQ2LDExMTNDMTA1MiwxMTEyIDEwNjYsMTExMCAxMDc3LDExMTBDMTA4OCwxMTA5IDExMDEsMTEwNyAxMTA2LDExMDdDMTExMiwxMTA2IDExMjQsMTEwNSAxMTM0LDExMDRDMTE0NCwxMTAzIDExNTcsMTEwMiAxMTYzLDExMDJDMTE3NSwxMTAwIDExOTMsMTA5OSAxMjIyLDEwOTdDMTIzMywxMDk2IDEyNDIsMTA5NiAxMjQyLDEwOTZDMTI0MywxMDk1IDEyNzksMTA5MiAxMjk5LDEwOTFDMTMxMCwxMDkwIDEzMTYsMTA5MCAxMzE4LDEwODlDMTMyMiwxMDg2IDEzMjUsMTA4NyAxMzI4LDEwODlDMTMzMSwxMDkyIDEzMjYsMTA5NiAxMzE3LDEwOTdDMTMxNCwxMDk4IDEzMDcsMTA5OSAxMzAyLDExMDFDMTI5NywxMTAyIDEyODgsMTEwNSAxMjgyLDExMDZDMTI3NywxMTA3IDEyNjgsMTEwOSAxMjYzLDExMTBDMTI1OCwxMTEyIDEyNTEsMTExMyAxMjQ3LDExMTRDMTIzNSwxMTE3IDEyMTgsMTEyMSAxMjExLDExMjJDMTIwNywxMTIzIDEyMDEsMTEyNCAxMTk3LDExMjVDMTE5MywxMTI3IDExODcsMTEyOCAxMTg0LDExMjhDMTE4MCwxMTI5IDExNzUsMTEzMCAxMTcyLDExMzFDMTE2OCwxMTMyIDExNjIsMTEzMyAxMTU4LDExMzRDMTE1NSwxMTM1IDExNDksMTEzNiAxMTQ1LDExMzdDMTE0MiwxMTM4IDExMzYsMTEzOSAxMTMzLDExNDBDMTEyOSwxMTQxIDExMjMsMTE0MiAxMTE4LDExNDNDMTExMywxMTQ1IDExMDcsMTE0NiAxMTA0LDExNDdDMTA4MSwxMTUzIDEwNzEsMTE1NiAxMDUzLDExNjFDMTA0OCwxMTYzIDEwNDMsMTE2NCAxMDQyLDExNjRDMTA0MiwxMTY0IDEwMzcsMTE2NSAxMDMyLDExNjdDMTAxMSwxMTc0IDk5NSwxMTc5IDk4NiwxMTgzQzk4MCwxMTg0IDk3MiwxMTg3IDk2OCwxMTg4Qzk2NSwxMTkwIDk1OCwxMTkyIDk1NCwxMTk0Qzk0OSwxMTk2IDk0MywxMTk4IDkzOSwxMjAwQzkzNSwxMjAxIDkyOCwxMjA0IDkyMywxMjA2QzkxOCwxMjA4IDkxMywxMjExIDkxMSwxMjExQzkwOSwxMjEyIDkwNCwxMjE0IDkwMCwxMjE2Qzg5NSwxMjE5IDg4OSwxMjIyIDg4NSwxMjIzQzg3NywxMjI3IDg1NSwxMjM4IDg0MiwxMjQ1QzgzNiwxMjQ4IDgzMCwxMjUxIDgyOSwxMjUyQzgyNSwxMjU0IDgyNSwxMjUzIDgyMSwxMjUweiIvPjxwYXRoIGZpbGw9IiM2OWIzNGMiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTcyMCwxNTI0QzcwOSwxNTI0IDY5NCwxNTIyIDY4NywxNTIxQzY4MCwxNTIwIDY3MCwxNTE5IDY2NiwxNTE5QzY2MSwxNTE4IDY1MiwxNTE3IDY0NiwxNTE2QzYzOSwxNTE0IDYzMSwxNTEzIDYyOCwxNTEyQzYxNSwxNTExIDYxNiwxNTA3IDYzNywxNDc4QzYzOSwxNDc1IDY0NCwxNDY5IDY0NywxNDY1QzY5MCwxNDA4IDc2MSwxMzQzIDgzNCwxMjk0Qzg0NSwxMjg3IDg1NiwxMjgwIDg1OSwxMjc4Qzg2MywxMjc2IDg3MSwxMjcxIDg3OCwxMjY3Qzg4NSwxMjYyIDg5NSwxMjU3IDkwMCwxMjU0QzkxMCwxMjQ4IDk1MCwxMjI4IDk2NiwxMjIwQzk3OCwxMjE1IDk4OCwxMjEwIDEwMDYsMTIwM0MxMDEyLDEyMDEgMTAxOSwxMTk4IDEwMjIsMTE5N0MxMDM0LDExOTIgMTA4OSwxMTc0IDExMTQsMTE2N0MxMTE5LDExNjUgMTEyNywxMTYzIDExMzIsMTE2MkMxMTM2LDExNjEgMTE0MywxMTU5IDExNDgsMTE1OEMxMTUyLDExNTcgMTE1OSwxMTU1IDExNjMsMTE1NEMxMTc0LDExNTEgMTE4NywxMTQ4IDExOTgsMTE0NkMxMjAyLDExNDUgMTIxMCwxMTQzIDEyMTQsMTE0MkMxMjE4LDExNDEgMTIyNCwxMTQwIDEyMjcsMTEzOUMxMjMxLDExMzkgMTIzNiwxMTM4IDEyMzksMTEzN0MxMjQzLDExMzYgMTI0OSwxMTM1IDEyNTIsMTEzNEMxMjU2LDExMzMgMTI2MywxMTMyIDEyNjgsMTEzMEMxMjczLDExMjkgMTI4MSwxMTI2IDEyODcsMTEyNUMxMzQ2LDExMDggMTM3OSwxMDg0IDEzOTIsMTA1MEMxMzk3LDEwMzcgMTQwNiwxMDA2IDE0MDksOTk3QzE0MDksOTkzIDE0MTEsOTg4IDE0MTIsOTg1QzE0MTIsOTgyIDE0MTQsOTc2IDE0MTUsOTcyQzE0MTUsOTY5IDE0MTcsOTYyIDE0MTgsOTU3QzE0MTksOTUzIDE0MjEsOTQ0IDE0MjIsOTM3QzE0MjMsOTMwIDE0MjUsOTIxIDE0MjUsOTE4QzE0MjYsOTE0IDE0MjcsOTA1IDE0MjgsODk4QzE0MjksODkwIDE0MzAsODgxIDE0MzEsODc2QzE0MzUsODUxIDE0MzUsNzY1IDE0MzAsNzM4QzE0MjksNzMyIDE0MjgsNzIzIDE0MjgsNzE4QzE0MjcsNzEyIDE0MjYsNzAzIDE0MjUsNjk2QzE0MjMsNjkwIDE0MjIsNjgzIDE0MjIsNjgwQzE0MjEsNjc0IDE0MTksNjY1IDE0MTQsNjQ0QzE0MTMsNjM5IDE0MTEsNjMwIDE0MTAsNjI1QzE0MDgsNjIwIDE0MDcsNjEzIDE0MDYsNjEwQzE0MDUsNjA3IDE0MDIsNTk5IDE0MDAsNTkyQzEzOTgsNTg1IDEzOTYsNTc3IDEzOTUsNTc0QzEzOTQsNTcyIDEzOTIsNTY3IDEzOTEsNTYzQzEzODksNTU2IDEzODQsNTQzIDEzNzksNTMwQzEzNzgsNTI2IDEzNzUsNTIwIDEzNzQsNTE3QzEzNjksNTA0IDEzNjQsNDkzIDEzNTUsNDc1QzEzNDUsNDU0IDEzNDUsNDU0IDEzNDgsNDQ4QzEzNDksNDQ2IDEzNTAsNDQxIDEzNTEsNDM0QzEzNTEsNDI3IDEzNTIsNDIzIDEzNTQsNDE5QzEzNTcsNDEwIDEzNTcsMzY4IDEzNTMsMzYwQzEzNTIsMzU3IDEzNTEsMzUzIDEzNTEsMzQ1QzEzNTAsMzM4IDEzNTAsMzM0IDEzNDgsMzMxQzEzNDcsMzI5IDEzNDUsMzI0IDEzNDUsMzIyQzEzNDQsMzE5IDEzNDMsMzE0IDEzNDIsMzEyQzEzNDAsMzA5IDEzMzksMzA1IDEzMzgsMzAzQzEzMzgsMjk5IDEzMzYsMjk1IDEzMjIsMjY2QzEzMDksMjQxIDEzMTAsMjQwIDEzMjksMjU3QzEzNzAsMjk2IDE0MzAsMzg3IDE0NTgsNDU2QzE0NjAsNDU5IDE0NjIsNDY1IDE0NjQsNDcwQzE0NjYsNDc1IDE0NjksNDgxIDE0NzAsNDg1QzE0NzIsNDg5IDE0NzQsNDk2IDE0NzYsNTAxQzE0NzksNTA2IDE0ODEsNTEzIDE0ODIsNTE3QzE0ODMsNTIxIDE0ODUsNTI2IDE0ODYsNTI4QzE0ODksNTM3IDE0OTcsNTY1IDE1MDAsNTc4QzE1MDEsNTgzIDE1MDMsNTg5IDE1MDMsNTkxQzE1MDQsNTkzIDE1MDYsNjAxIDE1MDcsNjA4QzE1MDgsNjE0IDE1MDksNjIxIDE1MTAsNjIyQzE1MTAsNjI0IDE1MTIsNjMxIDE1MTMsNjM4QzE1MTMsNjQ1IDE1MTUsNjUzIDE1MTUsNjU2QzE1MTcsNjY0IDE1MTgsNjcxIDE1MTksNjk3QzE1MjAsNzE3IDE1MjEsNzI0IDE1MjMsNzI0QzE1MjQsNzI0IDE1MjQsNzM4IDE1MjQsNzU5QzE1MjQsNzgwIDE1MjQsNzk0IDE1MjMsNzk0QzE1MjEsNzk0IDE1MjAsODAxIDE1MTksODIyQzE1MTgsODQ3IDE1MTcsODUzIDE1MTUsODYxQzE1MTUsODY1IDE1MTMsODczIDE1MTIsODc5QzE1MTIsODg1IDE1MTAsODk0IDE1MDksODk3QzE1MDgsOTAxIDE1MDcsOTA4IDE1MDYsOTEzQzE1MDUsOTE4IDE1MDQsOTI0IDE1MDMsOTI3QzE1MDIsOTMwIDE1MDEsOTM1IDE1MDEsOTM3QzE1MDAsOTQwIDE0OTksOTQ1IDE0OTcsOTUwQzE0OTYsOTU1IDE0OTQsOTYxIDE0OTQsOTY0QzE0OTEsOTc1IDE0ODYsOTg5IDE0ODUsOTkyQzE0ODQsOTk0IDE0ODMsOTk3IDE0ODMsOTk5QzE0ODIsMTAwMSAxNDgwLDEwMDkgMTQ3NywxMDE2QzE0NzQsMTAyNCAxNDcxLDEwMzEgMTQ3MSwxMDMyQzE0NzAsMTAzNCAxNDY3LDEwNDEgMTQ2NCwxMDQ4QzE0NjEsMTA1NiAxNDU3LDEwNjUgMTQ1NSwxMDcwQzE0NTIsMTA3OCAxNDI5LDExMjIgMTQyNSwxMTI4QzE0MjQsMTEzMCAxNDIwLDExMzcgMTQxNywxMTQzQzE0MDIsMTE2OCAxMzc3LDEyMDQgMTM2MCwxMjI2QzEzMTQsMTI4MyAxMjY0LDEzMzIgMTIxMCwxMzcyQzEyMDUsMTM3NiAxMTk4LDEzODEgMTE5NSwxMzgzQzExODgsMTM4OSAxMTcyLDE0MDAgMTE1NiwxNDA5QzExNDksMTQxNCAxMTQyLDE0MTggMTE0MSwxNDE5QzExNDAsMTQyMCAxMTMzLDE0MjQgMTEyNiwxNDI3QzExMTksMTQzMSAxMTExLDE0MzYgMTEwOCwxNDM4QzEwOTksMTQ0MyAxMDQxLDE0NzAgMTAzOSwxNDcwQzEwMzgsMTQ3MCAxMDMyLDE0NzIgMTAyNSwxNDc1QzEwMTEsMTQ4MSA5NzQsMTQ5MyA5NjgsMTQ5NUM5NjUsMTQ5NSA5NjIsMTQ5NiA5NTksMTQ5N0M5NTcsMTQ5OCA5NTMsMTQ5OSA5NDksMTUwMEM5NDYsMTUwMSA5NDEsMTUwMiA5MzgsMTUwM0M5MzEsMTUwNSA5MTUsMTUwOSA4OTQsMTUxMkM4ODcsMTUxNCA4NzksMTUxNSA4NzUsMTUxNkM4NzEsMTUxNyA4NjMsMTUxOCA4NTYsMTUxOUM4NDgsMTUyMCA4MzksMTUyMSA4MzQsMTUyMkM4MTksMTUyNCA3NjMsMTUyNiA3MjAsMTUyNHpNODgyLDkxOUM4ODEsOTE4IDg3OSw5MTggODc4LDkxOEM4NzMsOTE3IDg2NSw5MTAgODYyLDkwM0M4NTYsODkwIDg1OSw4ODAgODc1LDg2NEM5MTAsODI3IDkzNSw3ODYgOTUwLDczN0M5NTIsNzMxIDk1NCw3MjUgOTU0LDcyNEM5NTQsNzIzIDk1NSw3MTkgOTU2LDcxNEM5NTgsNzEwIDk1OSw3MDQgOTU5LDcwMEM5NjAsNjk2IDk2MSw2ODggOTYyLDY4MkM5NjUsNjY0IDk2NSw2MzEgOTYyLDYxMkM5NjEsNjA1IDk2MCw1OTYgOTU5LDU5MkM5NTksNTg5IDk1OCw1ODMgOTU2LDU3OUM5NTUsNTc0IDk1NCw1NzAgOTU0LDU2OUM5NTQsNTY1IDk0Niw1NDEgOTM5LDUyNEM5MjAsNDgwIDg4Miw0MzAgODQ0LDM5OUM4MzEsMzg5IDgyOCwzODUgODI2LDM3NEM4MjQsMzUxIDg0NiwzMzUgODY3LDM0NUM4ODAsMzUyIDkyNSwzOTYgOTQ0LDQyMUM5NjUsNDUwIDk4OSw0OTMgOTk3LDUxN0M5OTgsNTIxIDEwMDEsNTI5IDEwMDMsNTM2QzEwMDYsNTQzIDEwMDgsNTUxIDEwMDgsNTUzQzEwMDksNTU2IDEwMTAsNTYxIDEwMTEsNTYzQzEwMTIsNTY2IDEwMTMsNTcyIDEwMTQsNTc3QzEwMTUsNTgxIDEwMTYsNTkxIDEwMTcsNTk4QzEwMjIsNjIzIDEwMjIsNjc2IDEwMTcsNjk3QzEwMTYsNzAyIDEwMTUsNzEwIDEwMTQsNzE1QzEwMTMsNzIwIDEwMTIsNzI2IDEwMTEsNzI4QzEwMTEsNzMxIDEwMDksNzM2IDEwMDgsNzQwQzEwMDgsNzQzIDEwMDUsNzUyIDEwMDMsNzU4QzEwMDEsNzY0IDk5OCw3NzMgOTk2LDc3N0M5ODcsODA1IDk1OCw4NTQgOTMyLDg4NEM5MDgsOTEyIDg5Miw5MjMgODgyLDkxOXpNODIyLDgyNkM4MTQsODIyIDgxMSw4MTkgODA3LDgxMEM4MDIsNzk4IDgwNCw3OTAgODE4LDc3NEM4NDcsNzQxIDg2NSw2OTYgODY1LDY1NEM4NjUsNjE5IDg1OSw1OTUgODQ0LDU2NEM4MzIsNTM5IDgxNCw1MTYgNzkwLDQ5NkM3NjksNDc4IDc2OSw0NTUgNzkxLDQ0NEM4MDUsNDM3IDgxNiw0NDIgODQwLDQ2NUM4NzgsNTA0IDg5OSw1NDEgOTE0LDU5NEM5MjAsNjE1IDkyMiw2NjggOTE3LDY5MkM5MTUsNzA4IDkwOSw3MjYgOTAxLDc0NkM4OTAsNzc0IDg1OCw4MTggODQ0LDgyNUM4MzcsODI5IDgyOCw4MjkgODIyLDgyNnpNNzkzLDcyNkM3OTIsNzI0IDc5Miw3MjAgNzkxLDcxMUM3OTEsNzA1IDc5MCw2OTEgNzg5LDY4MUM3ODcsNjcxIDc4Niw2NTIgNzg1LDY0MEM3ODQsNjI2IDc4Myw2MTMgNzgyLDYwOEM3NzksNTk0IDc3OCw1NjEgNzgwLDU1OEM3ODYsNTQ4IDgwNCw1NjUgODE5LDU5NUM4MjIsNjAwIDgyOCw2MTggODI4LDYyNEM4MjksNjI2IDgzMCw2MzMgODMxLDYzOUM4MzMsNjU0IDgzMCw2NzIgODI0LDY5MEM4MTQsNzE3IDc5OSw3MzUgNzkzLDcyNnoiLz48cGF0aCB0cmFuc2Zvcm09InNjYWxlKDYpIiBmaWxsPSIjZmZmZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik01NS41LDQ4SDEwNS4wQTE1LDE1IDAgMCAxIDEyMC4wLDYzVjE3OEExNSwxNSAwIDAgMSAxMDUuMCwxOTNINTUuNUExNSwxNSAwIDAgMSA0MC41LDE3OFY2M0ExNSwxNSAwIDAgMSA1NS41LDQ4Wk02MSw1Nkg5OUE1LDUgMCAwIDEgMTA0LDYxVjYxQTUsNSAwIDAgMSA5OSw2Nkg2MUE1LDUgMCAwIDEgNTYsNjFWNjFBNSw1IDAgMCAxIDYxLDU2Wk01NSw3Mkg3MkE2LDYgMCAwIDEgNzgsNzhWOTguNUE2LDYgMCAwIDEgNzIsMTA0LjVINTVBNiw2IDAgMCAxIDQ5LDk4LjVWNzhBNiw2IDAgMCAxIDU1LDcyWk04OCw3MkgxMDVBNiw2IDAgMCAxIDExMSw3OFY5OC41QTYsNiAwIDAgMSAxMDUsMTA0LjVIODhBNiw2IDAgMCAxIDgyLDk4LjVWNzhBNiw2IDAgMCAxIDg4LDcyWk01NSwxMTVINzJBNiw2IDAgMCAxIDc4LDEyMVYxNTIuNUE2LDYgMCAwIDEgNzIsMTU4LjVINTVBNiw2IDAgMCAxIDQ5LDE1Mi41VjEyMUE2LDYgMCAwIDEgNTUsMTE1Wk04OCwxMTVIMTA1QTYsNiAwIDAgMSAxMTEsMTIxVjE1Mi41QTYsNiAwIDAgMSAxMDUsMTU4LjVIODhBNiw2IDAgMCAxIDgyLDE1Mi41VjEyMUE2LDYgMCAwIDEgODgsMTE1Wk01MC4yLDE3MS41QTUuOCw1LjggMCAxIDAgNjEuOCwxNzEuNUE1LjgsNS44IDAgMSAwIDUwLjIsMTcxLjVaTTk4LjIsMTcxLjVBNS44LDUuOCAwIDEgMCAxMDkuOCwxNzEuNUE1LjgsNS44IDAgMSAwIDk4LjIsMTcxLjVaTTcwLDE2OUg5MEEzLDMgMCAwIDEgOTMsMTcyVjE3MkEzLDMgMCAwIDEgOTAsMTc1SDcwQTMsMyAwIDAgMSA2NywxNzJWMTcyQTMsMyAwIDAgMSA3MCwxNjlaIi8+PC9zdmc+);--g:#6fb552;--g2:#75964a;--navy:#0b2a5b;--teal:#0f7b78;--blue:#3b5ba5;--mint:#d9f2cf;--bg:#fff;--bg2:#f1f8ed;--card:#fff;--tx:#0e1e3a;--mut:#4a5873;--bd:#cfe3c4;--hero:linear-gradient(110deg,#6fb552 0%,#6fb552 45%,#0b2a5b 100%);--herotx:#0b2a5b;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#081a38;--bg2:#0b2248;--card:#102a55;--tx:#eaf3e4;--mut:#aebcd3;--bd:#27457a;--mint:#1b3a2c}}
+:root[data-theme="dark"]{--bg:#081a38;--bg2:#0b2248;--card:#102a55;--tx:#eaf3e4;--mut:#aebcd3;--bd:#27457a;--mint:#1b3a2c}
+html{scroll-behavior:smooth;scroll-padding-top:calc(64px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--blue)}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--navy);color:#fff;display:flex;align-items:center;gap:14px;padding:10px 20px;flex-wrap:wrap}
+header b{font-size:20px;letter-spacing:.3px}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff}.brand b{font-size:22px}.brand .o{color:#5fd3c8}.brand .v{color:#a9c1ff}.em{display:block;background:var(--em) center/contain no-repeat;flex:none}
+nav{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+nav a{color:#dbe7ff;text-decoration:none;font-size:14px;padding:6px 10px;border-radius:8px}nav a:hover{background:#ffffff22}
+header button{background:#ffffff22;border:0;color:#fff;border-radius:8px;padding:6px 10px;cursor:pointer}
+.hero{background:var(--hero);color:var(--herotx);padding:72px 20px 56px}
+.wrap{max-width:1040px;margin:0 auto}
+.hero .wrap{display:flex;gap:32px;align-items:center;flex-wrap:wrap}.hero .lg{margin-left:auto;margin-right:20px;filter:drop-shadow(0 8px 22px #0007)}.hero .lg .em{width:min(300px,62vw);aspect-ratio:0.9961}@media(max-width:760px){.hero{background:linear-gradient(180deg,#6fb552 0%,#6fb552 45%,#0b2a5b 100%)}.hero .lg{margin:10px auto 0}}.hero h1{font-size:clamp(34px,6vw,60px);line-height:1.05;margin:0 0 14px;max-width:640px;font-weight:900;text-transform:uppercase}
+.hero p{max-width:560px;font-size:18px;margin:0 0 22px}
+.hero .mission{background:#fff;color:var(--navy);border-radius:16px;padding:18px 22px;max-width:640px;font-weight:700;font-size:18px;box-shadow:0 8px 24px #0004}
+.hero .mission small{display:block;color:var(--g2);text-transform:uppercase;letter-spacing:1px;font-size:12px}
+.pill{display:inline-block;background:var(--navy);color:#fff;border-radius:99px;padding:4px 12px;font-size:13px;margin-bottom:16px}
+section{padding:56px 20px}section:nth-of-type(even){background:var(--bg2)}
+h2{font-size:clamp(26px,4vw,38px);margin:0 0 6px;font-weight:900;text-transform:uppercase;color:var(--navy)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) h2{color:var(--g)}}
+:root[data-theme="dark"] h2{color:var(--g)}
+.sub{color:var(--mut);margin:0 0 26px;max-width:720px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:18px}
+.card h3{margin:0 0 6px;font-size:18px}
+.stat{font-size:40px;font-weight:900;color:var(--teal);line-height:1}
+.tl{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.tl .card{border-top:6px solid var(--g)}.tl .card.now{border-top-color:var(--navy);box-shadow:0 0 0 2px var(--g)}
+.tag{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--g2)}
+blockquote{margin:0;background:var(--card);border-left:5px solid var(--g);border-radius:12px;padding:14px 18px;font-style:italic}
+blockquote cite{display:block;font-style:normal;font-size:13px;color:var(--mut);margin-top:6px}
+.bars div{display:flex;align-items:center;gap:10px;margin:8px 0;font-size:14px}
+.bars i{display:block;height:16px;border-radius:8px;background:var(--g)}.bars span{min-width:210px}
+.funnel{display:flex;gap:10px;flex-wrap:wrap;align-items:stretch}
+.funnel .card{flex:1 1 150px;text-align:center}.funnel .n{font-size:42px;font-weight:900;color:var(--blue)}
+.concept{position:relative}.concept.win{border:2px solid var(--g);background:var(--mint)}
+.badge{position:absolute;top:-12px;right:14px;background:var(--navy);color:#fff;font-size:12px;font-weight:700;border-radius:99px;padding:3px 12px}
+.ph{height:110px;border:2px dashed var(--bd);border-radius:12px;display:grid;place-items:center;color:var(--mut);font-size:13px;margin:12px 0}
+.score{display:flex;justify-content:space-between;border-top:1px solid var(--bd);padding-top:10px;margin-top:10px;font-weight:700}
+.tbl{overflow-x:auto;border:1px solid var(--bd);border-radius:12px;background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:14px}
+th,td{padding:8px 10px;border-bottom:1px solid var(--bd);text-align:center}
+th:first-child,td:first-child{text-align:left}th{background:var(--navy);color:#fff;font-size:13px}
+td small{display:block;color:var(--mut)}
+.p{color:#1a8a3a;font-weight:800}.m{color:#c0392b;font-weight:800}
+td input{width:48px;padding:4px;border-radius:6px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);text-align:center}
+tfoot td{font-weight:800;background:var(--bg2)}
+.btn{background:var(--g);color:var(--navy);border:0;border-radius:10px;padding:8px 14px;font-weight:700;cursor:pointer;margin-top:12px}
+.note{font-size:13px;color:var(--mut);margin-top:10px}
+footer{background:var(--navy);color:#dbe7ff;padding:32px 20px;text-align:center}footer a{color:var(--g)}
+</style>
+</head>
+<body>
+<header>
+<a class="brand" href="#" aria-label="OcuVenture home"><span class="em" role="img" aria-label="OcuVenture logo" style="height:46px;width:45.8px"></span><b><span class="o">Ocu</span><span class="v">Venture</span></b></a>
+<nav><a href="#problem">Problem</a><a href="#research">Research</a><a href="#needs">Needs</a><a href="#concepts">Concepts</a><a href="#pugh">Pugh chart</a><a href="#team">Team</a></nav>
+<button id="th" aria-label="Toggle theme">Theme</button>
+</header>
+
+<div class="hero"><div class="wrap"><div style="flex:1 1 420px">
+<span class="pill">Group 2 · 2MEMS3 · Prof. Gareth Bennett</span>
+<h1>Independent bus travel for everyone</h1>
+<p>We are designing a way for visually impaired passengers to know when their bus arrives, identify it, and signal the driver to board.</p>
+<div class="mission"><small>Mission statement</small>“Restore independence to people with visual impairments on every journey”</div>
+</div><div class="lg"><span class="em" role="img" aria-label="OcuVenture logo: a double-decker bus with sound waves beside a person with a white cane"></span></div></div></div>
+
+<section id="journey"><div class="wrap">
+<h2>Our journey so far</h2>
+<p class="sub">Four weeks, from a broad commuter question to three screened concepts.</p>
+<div class="tl">
+<div class="card"><span class="tag">Week 2</span><h3>Choosing a problem area</h3><p>Surveys and interviews with stakeholders across Dublin led to our problem area: “Bus commuting is unreliable for those with visual or cognitive accessibility needs.”</p></div>
+<div class="card"><span class="tag">Week 3</span><h3>Needfinding</h3><p>Outreach, interviews, a vision-simulation test and an affinity board produced our problem definition, prioritised needs and mission statement.</p></div>
+<div class="card now"><span class="tag">Week 4 · current</span><h3>Concept generation and screening</h3><p>6-3-5 brainstorming, benchmarking of existing products, then a Pugh chart screen. CAD and renders of the top three concepts are in progress.</p></div>
+</div></div></section>
+
+<section id="problem"><div class="wrap">
+<h2>The problem</h2>
+<p class="sub">Visually impaired passengers face barriers when using Dublin’s bus network, making independent travel difficult and uncertain.</p>
+<div class="grid">
+<div class="card"><h3>Know when the bus is arriving</h3><p>Arrival information that is reliable and real-time, so journeys can be planned with confidence.</p></div>
+<div class="card"><h3>Identify the correct bus</h3><p>Knowing which bus is which, without relying on a display or on asking others.</p></div>
+<div class="card"><h3>Signal the driver to board</h3><p>Communicating boarding intent without relying on a visible wave.</p></div>
+</div>
+<h3 style="margin:30px 0 12px">The scale</h3>
+<div class="grid">
+<div class="card"><div class="stat">296,601</div><p>people in Ireland with blindness or a visual impairment</p></div>
+<div class="card"><div class="stat">35,770</div><p>people in Dublin with blindness or a visual impairment</p></div>
+<div class="card"><div class="stat">74%</div><p>of people with visual impairments rely on public transport</p></div>
+</div>
+<p class="note">Figures from our Week 3 data analysis, which cites the CSO Census 2022 disability profile, Disability Federation of Ireland’s Dublin City profile and Vision Ireland (vi.ie).</p>
+</div></section>
+
+<section id="research"><div class="wrap">
+<h2>Research and stakeholders</h2>
+<p class="sub">Around 20 stakeholders across Dublin have helped shape this project. Quotes are from our interviews and outreach.</p>
+<div class="grid">
+<blockquote>“Getting onto the bus is a problem and getting off is worse.”<cite>Vulnerable adult, Week 2 interview</cite></blockquote>
+<blockquote>“I’m unable to board the bus if the accessibility space is taken.”<cite>Wheelchair user, Week 2 interview</cite></blockquote>
+<blockquote>“It’s hard to know if I’ve indicated that I want to stop.” “I feel like an eejit.”<cite>Elderly public bus user, Week 3 interview</cite></blockquote>
+<blockquote>“Service user often gets distressed… it’s the uncertainty of whether it’s coming in two or twenty minutes.”<cite>Part-time caregiver, Dovida Healthcare, 2026</cite></blockquote>
+</div>
+<div class="grid" style="margin-top:22px">
+<div class="card"><h3>Outreach</h3><p>Emails to specialist organisations, including ChildVision (school for visually impaired children, in-person visit). Interviews with two visually impaired regular public transport users were planned.</p></div>
+<div class="card"><h3>Vision simulation</h3><p>A Trinity engineering student wore a mask with small holes to replicate impaired vision, followed by a post-test interview about the experience.</p></div>
+<div class="card"><h3>Stakeholder survey</h3><p>Three stakeholders answered our carer and user survey on obstacles, current products and what works.</p></div>
+</div>
+<h3 style="margin:30px 0 8px">Who responded to our commuter survey</h3>
+<div class="bars">
+<div><span>University students</span><i style="width:58.8%"></i>58.8%</div>
+<div><span>Employed</span><i style="width:23.5%"></i>23.5%</div>
+<div><span>University staff</span><i style="width:11.8%"></i>11.8%</div>
+<div><span>Unemployed due to disability</span><i style="width:5.9%"></i>5.9%</div>
+</div>
+<h3 style="margin:30px 0 12px">What existing aids do, and where they fall short</h3>
+<div class="tbl"><table><tr><th>Aid</th><th>Helps</th><th>Falls short</th></tr>
+<tr><td>JAM card</td><td>Signals needs without a scene</td><td>Needs staff to be there; reliant on driver recognition and response</td></tr>
+<tr><td>TFI live tracker</td><td>Estimates journey times</td><td>Buses vanish from the app</td></tr>
+<tr><td>Tactile platform edges</td><td>Guide people at platforms</td><td>Not all bus stops have them</td></tr>
+<tr><td>SOS button</td><td>Quick emergency contact</td><td>Hard to reach at times</td></tr>
+<tr><td>Audio announcements</td><td>Information without sight</td><td>Reliant on audio working and being audible</td></tr>
+<tr><td>Luas audio announcements</td><td>Information on board</td><td>Doesn’t help navigating the platform</td></tr></table></div>
+<h3 style="margin:30px 0 12px">Benchmarking existing products</h3>
+<div class="grid">
+<div class="card"><h3>WeWALK</h3><p><b class="p">Pros:</b> Works as a cane and phone, connects to the Moovit app.<br><b class="m">Cons:</b> Extremely expensive.</p></div>
+<div class="card"><h3>NaviLens</h3><p><b class="p">Pros:</b> Hands-free, reads QR codes to scan for buses.<br><b class="m">Cons:</b> Doesn’t currently exist in Dublin.</p></div>
+<div class="card"><h3>Envision</h3><p><b class="p">Pros:</b> Can read or describe everything you see.<br><b class="m">Cons:</b> Extremely expensive.</p></div>
+<div class="card"><h3>The Wayfinding Centre (TFI Independent Travel Support)</h3><p><b class="p">Pros:</b> Free service that helps people across Dublin.<br><b class="m">Cons:</b> Only one site exists, making it less accessible.</p></div>
+</div></div></section>
+
+<section id="needs"><div class="wrap">
+<h2>Needs and requirements</h2>
+<p class="sub">Our affinity board grouped findings into themes of uncertainty, monitoring and signalling, and information availability.</p>
+<div class="grid">
+<div class="card"><span class="tag">Priority 1</span><h3>Navigate independently</h3><p>Find stops and routes and reach your destination.</p></div>
+<div class="card"><span class="tag">Priority 2</span><h3>Get clear real-time information</h3><p>Know when the bus arrives and any changes.</p></div>
+<div class="card"><span class="tag">Priority 3</span><h3>Communicate discreetly</h3><p>Signal that you need help, privately.</p></div>
+</div>
+<div class="card" style="margin-top:16px"><span class="tag">Requirement 1</span><h3>Accuracy of arrival information</h3><p>The system must give a reliable, real-time signal of bus arrival, so users can plan their journey with confidence.</p></div>
+</div></section>
+
+<section id="concepts"><div class="wrap">
+<h2>Concept generation</h2>
+<p class="sub">We used the 6-3-5 method (Wodehouse and Ion, 2012): sheets are passed around the group so everyone contributes equally, ideas build on each other, and the group produces a large number of ideas quickly.</p>
+<div class="funnel">
+<div class="card"><div class="n">50</div>ideas screened</div>
+<div class="card"><div class="n">15</div>combined, duplicates merged</div>
+<div class="card"><div class="n">6</div>merged into hybrids</div>
+<div class="card"><div class="n">3</div>final concepts</div>
+</div>
+<h3 style="margin:30px 0 14px">Our three concepts</h3>
+<div class="grid">
+<div class="card concept"><span class="tag">Concept A</span><h3>Tactile info stand</h3><p>Accessible smart bus stop with braille, raised lettering and tactile maps. In the Pugh chart it is a refreshable braille or pin display showing which buses are arriving and when.</p><div class="ph">CAD render coming soon</div><div class="score"><span>Rank <b id="rA"></b></span><span>Score <b id="sA"></b></span></div></div>
+<div class="card concept win"><span class="badge">Leading</span><span class="tag">Concept B</span><h3>Smart haptic keychain</h3><p>A wearable or keychain that signals the approaching bus that you want it to stop, with different vibration patterns when your selected bus arrives. It can be set up before the journey with a simple app.</p><div class="ph">CAD render coming soon</div><div class="score"><span>Rank <b id="rB"></b></span><span>Score <b id="sB"></b></span></div></div>
+<div class="card concept"><span class="tag">Concept C</span><h3>Driver advance alert</h3><p>Bus hailing and driver alert system. The driver’s console warns ahead of time that a visually impaired rider is waiting, with confirmation through an accessible interface.</p><div class="ph">CAD render coming soon</div><div class="score"><span>Rank <b id="rC"></b></span><span>Score <b id="sC"></b></span></div></div>
+</div></div></section>
+
+<section id="pugh"><div class="wrap">
+<h2>Pugh chart</h2>
+<p class="sub">Each concept is scored against today’s setup (the datum): +1 better, 0 same, −1 worse. Change any weight (1–5) and the totals update. Our starting weights and scores are first guesses that the group is still refining.</p>
+<div class="tbl"><table id="pt"></table></div>
+<button class="btn" id="reset">Reset weights</button>
+<p class="note">Datum: audio push-button on real-time signs, phone apps, static braille stop signs, and asking the driver.</p>
+</div></section>
+
+<section id="team"><div class="wrap">
+<h2>Team OcuVenture</h2>
+<p class="sub">Seven engineering students, all daily commuters.</p>
+<div class="grid" id="tm"></div>
+</div></section>
+
+<footer>
+<span class="em" role="img" aria-label="OcuVenture logo" style="height:84px;width:83.7px;margin:0 auto 10px"></span><b>OcuVenture</b> · Group 2 · 2MEMS3 · Trinity College Dublin<br>
+Contact: <a href="mailto:Ocuventure@gmail.com">Ocuventure@gmail.com</a>
+</footer>
+
+<script>
+var team=[["Dylan Kaplan","Commutes by bike"],["James O’Connor","Commutes by bike"],["Brigid (Bree) Okoiron","Travels by Iarnród Éireann"],["Noah Stafford","Commutes by bus"],["Alex Jauny","Commutes by Express Coach"],["Charlie McNally","Commutes by DART"],["Sophie Deane","Travels by Iarnród Éireann"]];
+document.getElementById("tm").innerHTML=team.map(function(t){return '<div class="card"><h3>'+t[0]+'</h3><p>'+t[1]+'</p></div>'}).join("");
+var rows=[["Serves deafblind riders","Works without relying on hearing",5,[1,1,1]],["Helps board the right bus","Rider knows which bus is which",5,[1,1,1]],["Works for non-braille readers","Most blind people aren’t fluent in braille",4,[-1,1,1]],["Ease of use","Little to learn, nothing to find first",4,[0,1,0]],["Cost to build and deploy","Hardware, installation, per-stop cost",4,[-1,0,1]],["Rider independence","No planning ahead, no relying on others",3,[1,1,-1]],["Durability and maintenance","Weather, vandalism, upkeep",3,[-1,1,1]],["Scalability across the network","Easy to roll out to every stop and bus",3,[-1,1,1]],["Privacy and dignity","Rider controls who knows about their impairment",2,[1,-1,-1]],["Driver workload","Adds little to the driver’s job",2,[0,0,-1]]];
+var w=rows.map(function(r){return r[2]});
+function f(v){return v>0?'<span class="p">+1</span>':v<0?'<span class="m">−1</span>':'0'}
+function draw(){
+var h='<thead><tr><th>Criterion</th><th>Weight</th><th>A: Tactile info stand</th><th>B: Smart keychain</th><th>C: Driver advance alert</th></tr></thead><tbody>';
+rows.forEach(function(r,i){h+='<tr><td>'+r[0]+'<small>'+r[1]+'</small></td><td><input type="number" min="1" max="5" value="'+w[i]+'" data-i="'+i+'" aria-label="Weight for '+r[0]+'"></td><td>'+f(r[3][0])+'</td><td>'+f(r[3][1])+'</td><td>'+f(r[3][2])+'</td></tr>'});
+var t=[0,0,0],pl=[0,0,0],mi=[0,0,0];
+rows.forEach(function(r,i){for(var k=0;k<3;k++){t[k]+=r[3][k]*w[i];if(r[3][k]>0)pl[k]++;if(r[3][k]<0)mi[k]++}});
+var rk=t.map(function(v){return 1+t.filter(function(x){return x>v}).length});
+h+='</tbody><tfoot><tr><td>Number of +</td><td></td><td>'+pl[0]+'</td><td>'+pl[1]+'</td><td>'+pl[2]+'</td></tr><tr><td>Number of −</td><td></td><td>'+mi[0]+'</td><td>'+mi[1]+'</td><td>'+mi[2]+'</td></tr><tr><td>Weighted total</td><td></td><td>'+t[0]+'</td><td>'+t[1]+'</td><td>'+t[2]+'</td></tr><tr><td>Rank</td><td></td><td>'+rk[0]+'</td><td>'+rk[1]+'</td><td>'+rk[2]+'</td></tr></tfoot>';
+document.getElementById("pt").innerHTML=h;
+["A","B","C"].forEach(function(l,k){document.getElementById("s"+l).textContent=t[k];document.getElementById("r"+l).textContent="#"+rk[k]});
+document.querySelectorAll("#pt input").forEach(function(e){e.onchange=function(){var v=Math.max(1,Math.min(5,parseInt(e.value)||1));w[+e.dataset.i]=v;draw()}})}
+document.getElementById("reset").onclick=function(){w=rows.map(function(r){return r[2]});draw()};
+draw();
+document.getElementById("th").onclick=function(){var d=document.documentElement,c=d.getAttribute("data-theme");var dark=c?c==="dark":window.matchMedia("(prefers-color-scheme:dark)").matches;d.setAttribute("data-theme",dark?"light":"dark")};
+</script>
+</body>
+</html>
