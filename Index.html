@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>OcuVenture | Independent bus travel for people with visual impairments</title>
+<style>
+:root{--g:#6fb552;--g2:#75964a;--navy:#0b2a5b;--teal:#0f7b78;--blue:#3b5ba5;--mint:#d9f2cf;--bg:#fff;--bg2:#f1f8ed;--card:#fff;--tx:#0e1e3a;--mut:#4a5873;--bd:#cfe3c4;--hero:linear-gradient(110deg,#6fb552 0%,#6fb552 45%,#0b2a5b 100%);--herotx:#0b2a5b;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#081a38;--bg2:#0b2248;--card:#102a55;--tx:#eaf3e4;--mut:#aebcd3;--bd:#27457a;--mint:#1b3a2c}}
+:root[data-theme="dark"]{--bg:#081a38;--bg2:#0b2248;--card:#102a55;--tx:#eaf3e4;--mut:#aebcd3;--bd:#27457a;--mint:#1b3a2c}
+html{scroll-behavior:smooth;scroll-padding-top:calc(64px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--blue)}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--navy);color:#fff;display:flex;align-items:center;gap:14px;padding:10px 20px;flex-wrap:wrap}
+header b{font-size:20px;letter-spacing:.3px}header b span{color:var(--g)}
+nav{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+nav a{color:#dbe7ff;text-decoration:none;font-size:14px;padding:6px 10px;border-radius:8px}nav a:hover{background:#ffffff22}
+header button{background:#ffffff22;border:0;color:#fff;border-radius:8px;padding:6px 10px;cursor:pointer}
+.hero{background:var(--hero);color:var(--herotx);padding:72px 20px 56px}
+.wrap{max-width:1040px;margin:0 auto}
+.hero h1{font-size:clamp(34px,6vw,60px);line-height:1.05;margin:0 0 14px;max-width:640px;font-weight:900;text-transform:uppercase}
+.hero p{max-width:560px;font-size:18px;margin:0 0 22px}
+.hero .mission{background:#fff;color:var(--navy);border-radius:16px;padding:18px 22px;max-width:640px;font-weight:700;font-size:18px;box-shadow:0 8px 24px #0004}
+.hero .mission small{display:block;color:var(--g2);text-transform:uppercase;letter-spacing:1px;font-size:12px}
+.pill{display:inline-block;background:var(--navy);color:#fff;border-radius:99px;padding:4px 12px;font-size:13px;margin-bottom:16px}
+section{padding:56px 20px}section:nth-of-type(even){background:var(--bg2)}
+h2{font-size:clamp(26px,4vw,38px);margin:0 0 6px;font-weight:900;text-transform:uppercase;color:var(--navy)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) h2{color:var(--g)}}
+:root[data-theme="dark"] h2{color:var(--g)}
+.sub{color:var(--mut);margin:0 0 26px;max-width:720px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:18px}
+.card h3{margin:0 0 6px;font-size:18px}
+.stat{font-size:40px;font-weight:900;color:var(--teal);line-height:1}
+.tl{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.tl .card{border-top:6px solid var(--g)}.tl .card.now{border-top-color:var(--navy);box-shadow:0 0 0 2px var(--g)}
+.tag{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--g2)}
+blockquote{margin:0;background:var(--card);border-left:5px solid var(--g);border-radius:12px;padding:14px 18px;font-style:italic}
+blockquote cite{display:block;font-style:normal;font-size:13px;color:var(--mut);margin-top:6px}
+.bars div{display:flex;align-items:center;gap:10px;margin:8px 0;font-size:14px}
+.bars i{display:block;height:16px;border-radius:8px;background:var(--g)}.bars span{min-width:210px}
+.funnel{display:flex;gap:10px;flex-wrap:wrap;align-items:stretch}
+.funnel .card{flex:1 1 150px;text-align:center}.funnel .n{font-size:42px;font-weight:900;color:var(--blue)}
+.concept{position:relative}.concept.win{border:2px solid var(--g);background:var(--mint)}
+.badge{position:absolute;top:-12px;right:14px;background:var(--navy);color:#fff;font-size:12px;font-weight:700;border-radius:99px;padding:3px 12px}
+.ph{height:110px;border:2px dashed var(--bd);border-radius:12px;display:grid;place-items:center;color:var(--mut);font-size:13px;margin:12px 0}
+.score{display:flex;justify-content:space-between;border-top:1px solid var(--bd);padding-top:10px;margin-top:10px;font-weight:700}
+.tbl{overflow-x:auto;border:1px solid var(--bd);border-radius:12px;background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:14px}
+th,td{padding:8px 10px;border-bottom:1px solid var(--bd);text-align:center}
+th:first-child,td:first-child{text-align:left}th{background:var(--navy);color:#fff;font-size:13px}
+td small{display:block;color:var(--mut)}
+.p{color:#1a8a3a;font-weight:800}.m{color:#c0392b;font-weight:800}
+td input{width:48px;padding:4px;border-radius:6px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);text-align:center}
+tfoot td{font-weight:800;background:var(--bg2)}
+.btn{background:var(--g);color:var(--navy);border:0;border-radius:10px;padding:8px 14px;font-weight:700;cursor:pointer;margin-top:12px}
+.note{font-size:13px;color:var(--mut);margin-top:10px}
+footer{background:var(--navy);color:#dbe7ff;padding:32px 20px;text-align:center}footer a{color:var(--g)}
+</style>
+</head>
+<body>
+<header>
+<b>Ocu<span>Venture</span></b>
+<nav><a href="#problem">Problem</a><a href="#research">Research</a><a href="#needs">Needs</a><a href="#concepts">Concepts</a><a href="#pugh">Pugh chart</a><a href="#team">Team</a></nav>
+<button id="th" aria-label="Toggle theme">Theme</button>
+</header>
+
+<div class="hero"><div class="wrap">
+<span class="pill">Group 2 · 2MEMS3 · Prof. Gareth Bennett</span>
+<h1>Independent bus travel for everyone</h1>
+<p>We are designing a way for visually impaired passengers to know when their bus arrives, identify it, and signal the driver to board.</p>
+<div class="mission"><small>Mission statement</small>“Restore independence to people with visual impairments on every journey”</div>
+</div></div>
+
+<section id="journey"><div class="wrap">
+<h2>Our journey so far</h2>
+<p class="sub">Four weeks, from a broad commuter question to three screened concepts.</p>
+<div class="tl">
+<div class="card"><span class="tag">Week 2</span><h3>Choosing a problem area</h3><p>Surveys and interviews with stakeholders across Dublin led to our problem area: “Bus commuting is unreliable for those with visual or cognitive accessibility needs.”</p></div>
+<div class="card"><span class="tag">Week 3</span><h3>Needfinding</h3><p>Outreach, interviews, a vision-simulation test and an affinity board produced our problem definition, prioritised needs and mission statement.</p></div>
+<div class="card now"><span class="tag">Week 4 · current</span><h3>Concept generation and screening</h3><p>6-3-5 brainstorming, benchmarking of existing products, then a Pugh chart screen. CAD and renders of the top three concepts are in progress.</p></div>
+</div></div></section>
+
+<section id="problem"><div class="wrap">
+<h2>The problem</h2>
+<p class="sub">Visually impaired passengers face barriers when using Dublin’s bus network, making independent travel difficult and uncertain.</p>
+<div class="grid">
+<div class="card"><h3>Know when the bus is arriving</h3><p>Arrival information that is reliable and real-time, so journeys can be planned with confidence.</p></div>
+<div class="card"><h3>Identify the correct bus</h3><p>Knowing which bus is which, without relying on a display or on asking others.</p></div>
+<div class="card"><h3>Signal the driver to board</h3><p>Communicating boarding intent without relying on a visible wave.</p></div>
+</div>
+<h3 style="margin:30px 0 12px">The scale</h3>
+<div class="grid">
+<div class="card"><div class="stat">296,601</div><p>people in Ireland with blindness or a visual impairment</p></div>
+<div class="card"><div class="stat">35,770</div><p>people in Dublin with blindness or a visual impairment</p></div>
+<div class="card"><div class="stat">74%</div><p>of people with visual impairments rely on public transport</p></div>
+</div>
+<p class="note">Figures from our Week 3 data analysis, which cites the CSO Census 2022 disability profile, Disability Federation of Ireland’s Dublin City profile and Vision Ireland (vi.ie).</p>
+</div></section>
+
+<section id="research"><div class="wrap">
+<h2>Research and stakeholders</h2>
+<p class="sub">Around 20 stakeholders across Dublin have helped shape this project. Quotes are from our interviews and outreach.</p>
+<div class="grid">
+<blockquote>“Getting onto the bus is a problem and getting off is worse.”<cite>Vulnerable adult, Week 2 interview</cite></blockquote>
+<blockquote>“I’m unable to board the bus if the accessibility space is taken.”<cite>Wheelchair user, Week 2 interview</cite></blockquote>
+<blockquote>“It’s hard to know if I’ve indicated that I want to stop.” “I feel like an eejit.”<cite>Elderly public bus user, Week 3 interview</cite></blockquote>
+<blockquote>“Service user often gets distressed… it’s the uncertainty of whether it’s coming in two or twenty minutes.”<cite>Part-time caregiver, Dovida Healthcare, 2026</cite></blockquote>
+</div>
+<div class="grid" style="margin-top:22px">
+<div class="card"><h3>Outreach</h3><p>Emails to specialist organisations, including ChildVision (school for visually impaired children, in-person visit). Interviews with two visually impaired regular public transport users were planned.</p></div>
+<div class="card"><h3>Vision simulation</h3><p>A Trinity engineering student wore a mask with small holes to replicate impaired vision, followed by a post-test interview about the experience.</p></div>
+<div class="card"><h3>Stakeholder survey</h3><p>Three stakeholders answered our carer and user survey on obstacles, current products and what works.</p></div>
+</div>
+<h3 style="margin:30px 0 8px">Who responded to our commuter survey</h3>
+<div class="bars">
+<div><span>University students</span><i style="width:58.8%"></i>58.8%</div>
+<div><span>Employed</span><i style="width:23.5%"></i>23.5%</div>
+<div><span>University staff</span><i style="width:11.8%"></i>11.8%</div>
+<div><span>Unemployed due to disability</span><i style="width:5.9%"></i>5.9%</div>
+</div>
+<h3 style="margin:30px 0 12px">What existing aids do, and where they fall short</h3>
+<div class="tbl"><table><tr><th>Aid</th><th>Helps</th><th>Falls short</th></tr>
+<tr><td>JAM card</td><td>Signals needs without a scene</td><td>Needs staff to be there; reliant on driver recognition and response</td></tr>
+<tr><td>TFI live tracker</td><td>Estimates journey times</td><td>Buses vanish from the app</td></tr>
+<tr><td>Tactile platform edges</td><td>Guide people at platforms</td><td>Not all bus stops have them</td></tr>
+<tr><td>SOS button</td><td>Quick emergency contact</td><td>Hard to reach at times</td></tr>
+<tr><td>Audio announcements</td><td>Information without sight</td><td>Reliant on audio working and being audible</td></tr>
+<tr><td>Luas audio announcements</td><td>Information on board</td><td>Doesn’t help navigating the platform</td></tr></table></div>
+<h3 style="margin:30px 0 12px">Benchmarking existing products</h3>
+<div class="grid">
+<div class="card"><h3>WeWALK</h3><p><b class="p">Pros:</b> Works as a cane and phone, connects to the Moovit app.<br><b class="m">Cons:</b> Extremely expensive.</p></div>
+<div class="card"><h3>NaviLens</h3><p><b class="p">Pros:</b> Hands-free, reads QR codes to scan for buses.<br><b class="m">Cons:</b> Doesn’t currently exist in Dublin.</p></div>
+<div class="card"><h3>Envision</h3><p><b class="p">Pros:</b> Can read or describe everything you see.<br><b class="m">Cons:</b> Extremely expensive.</p></div>
+<div class="card"><h3>The Wayfinding Centre (TFI Independent Travel Support)</h3><p><b class="p">Pros:</b> Free service that helps people across Dublin.<br><b class="m">Cons:</b> Only one site exists, making it less accessible.</p></div>
+</div></div></section>
+
+<section id="needs"><div class="wrap">
+<h2>Needs and requirements</h2>
+<p class="sub">Our affinity board grouped findings into themes of uncertainty, monitoring and signalling, and information availability.</p>
+<div class="grid">
+<div class="card"><span class="tag">Priority 1</span><h3>Navigate independently</h3><p>Find stops and routes and reach your destination.</p></div>
+<div class="card"><span class="tag">Priority 2</span><h3>Get clear real-time information</h3><p>Know when the bus arrives and any changes.</p></div>
+<div class="card"><span class="tag">Priority 3</span><h3>Communicate discreetly</h3><p>Signal that you need help, privately.</p></div>
+</div>
+<div class="card" style="margin-top:16px"><span class="tag">Requirement 1</span><h3>Accuracy of arrival information</h3><p>The system must give a reliable, real-time signal of bus arrival, so users can plan their journey with confidence.</p></div>
+</div></section>
+
+<section id="concepts"><div class="wrap">
+<h2>Concept generation</h2>
+<p class="sub">We used the 6-3-5 method (Wodehouse and Ion, 2012): sheets are passed around the group so everyone contributes equally, ideas build on each other, and the group produces a large number of ideas quickly.</p>
+<div class="funnel">
+<div class="card"><div class="n">50</div>ideas screened</div>
+<div class="card"><div class="n">15</div>combined, duplicates merged</div>
+<div class="card"><div class="n">6</div>merged into hybrids</div>
+<div class="card"><div class="n">3</div>final concepts</div>
+</div>
+<h3 style="margin:30px 0 14px">Our three concepts</h3>
+<div class="grid">
+<div class="card concept"><span class="tag">Concept A</span><h3>Tactile info stand</h3><p>Accessible smart bus stop with braille, raised lettering and tactile maps. In the Pugh chart it is a refreshable braille or pin display showing which buses are arriving and when.</p><div class="ph">CAD render coming soon</div><div class="score"><span>Rank <b id="rA"></b></span><span>Score <b id="sA"></b></span></div></div>
+<div class="card concept win"><span class="badge">Leading</span><span class="tag">Concept B</span><h3>Smart haptic keychain</h3><p>A wearable or keychain that signals the approaching bus that you want it to stop, with different vibration patterns when your selected bus arrives. It can be set up before the journey with a simple app.</p><div class="ph">CAD render coming soon</div><div class="score"><span>Rank <b id="rB"></b></span><span>Score <b id="sB"></b></span></div></div>
+<div class="card concept"><span class="tag">Concept C</span><h3>Driver advance alert</h3><p>Bus hailing and driver alert system. The driver’s console warns ahead of time that a visually impaired rider is waiting, with confirmation through an accessible interface.</p><div class="ph">CAD render coming soon</div><div class="score"><span>Rank <b id="rC"></b></span><span>Score <b id="sC"></b></span></div></div>
+</div></div></section>
+
+<section id="pugh"><div class="wrap">
+<h2>Pugh chart</h2>
+<p class="sub">Each concept is scored against today’s setup (the datum): +1 better, 0 same, −1 worse. Change any weight (1–5) and the totals update. Our starting weights and scores are first guesses that the group is still refining.</p>
+<div class="tbl"><table id="pt"></table></div>
+<button class="btn" id="reset">Reset weights</button>
+<p class="note">Datum: audio push-button on real-time signs, phone apps, static braille stop signs, and asking the driver.</p>
+</div></section>
+
+<section id="team"><div class="wrap">
+<h2>Team OcuVenture</h2>
+<p class="sub">Seven engineering students, all daily commuters.</p>
+<div class="grid" id="tm"></div>
+</div></section>
+
+<footer>
+<b>OcuVenture</b> · Group 2 · 2MEMS3 · Trinity College Dublin<br>
+Contact: <a href="mailto:Ocuventure@gmail.com">Ocuventure@gmail.com</a>
+</footer>
+
+<script>
+var team=[["Dylan Kaplan","Commutes by bike"],["James O’Connor","Commutes by bike"],["Brigid (Bree) Okoiron","Travels by Iarnród Éireann"],["Noah Stafford","Commutes by bus"],["Alex Jauny","Commutes by Express Coach"],["Charlie McNally","Commutes by DART"],["Sophie Deane","Travels by Iarnród Éireann"]];
+document.getElementById("tm").innerHTML=team.map(function(t){return '<div class="card"><h3>'+t[0]+'</h3><p>'+t[1]+'</p></div>'}).join("");
+var rows=[["Serves deafblind riders","Works without relying on hearing",5,[1,1,1]],["Helps board the right bus","Rider knows which bus is which",5,[1,1,1]],["Works for non-braille readers","Most blind people aren’t fluent in braille",4,[-1,1,1]],["Ease of use","Little to learn, nothing to find first",4,[0,1,0]],["Cost to build and deploy","Hardware, installation, per-stop cost",4,[-1,0,1]],["Rider independence","No planning ahead, no relying on others",3,[1,1,-1]],["Durability and maintenance","Weather, vandalism, upkeep",3,[-1,1,1]],["Scalability across the network","Easy to roll out to every stop and bus",3,[-1,1,1]],["Privacy and dignity","Rider controls who knows about their impairment",2,[1,-1,-1]],["Driver workload","Adds little to the driver’s job",2,[0,0,-1]]];
+var w=rows.map(function(r){return r[2]});
+function f(v){return v>0?'<span class="p">+1</span>':v<0?'<span class="m">−1</span>':'0'}
+function draw(){
+var h='<thead><tr><th>Criterion</th><th>Weight</th><th>A: Tactile info stand</th><th>B: Smart keychain</th><th>C: Driver advance alert</th></tr></thead><tbody>';
+rows.forEach(function(r,i){h+='<tr><td>'+r[0]+'<small>'+r[1]+'</small></td><td><input type="number" min="1" max="5" value="'+w[i]+'" data-i="'+i+'" aria-label="Weight for '+r[0]+'"></td><td>'+f(r[3][0])+'</td><td>'+f(r[3][1])+'</td><td>'+f(r[3][2])+'</td></tr>'});
+var t=[0,0,0],pl=[0,0,0],mi=[0,0,0];
+rows.forEach(function(r,i){for(var k=0;k<3;k++){t[k]+=r[3][k]*w[i];if(r[3][k]>0)pl[k]++;if(r[3][k]<0)mi[k]++}});
+var rk=t.map(function(v){return 1+t.filter(function(x){return x>v}).length});
+h+='</tbody><tfoot><tr><td>Number of +</td><td></td><td>'+pl[0]+'</td><td>'+pl[1]+'</td><td>'+pl[2]+'</td></tr><tr><td>Number of −</td><td></td><td>'+mi[0]+'</td><td>'+mi[1]+'</td><td>'+mi[2]+'</td></tr><tr><td>Weighted total</td><td></td><td>'+t[0]+'</td><td>'+t[1]+'</td><td>'+t[2]+'</td></tr><tr><td>Rank</td><td></td><td>'+rk[0]+'</td><td>'+rk[1]+'</td><td>'+rk[2]+'</td></tr></tfoot>';
+document.getElementById("pt").innerHTML=h;
+["A","B","C"].forEach(function(l,k){document.getElementById("s"+l).textContent=t[k];document.getElementById("r"+l).textContent="#"+rk[k]});
+document.querySelectorAll("#pt input").forEach(function(e){e.onchange=function(){var v=Math.max(1,Math.min(5,parseInt(e.value)||1));w[+e.dataset.i]=v;draw()}})}
+document.getElementById("reset").onclick=function(){w=rows.map(function(r){return r[2]});draw()};
+draw();
+document.getElementById("th").onclick=function(){var d=document.documentElement,c=d.getAttribute("data-theme");var dark=c?c==="dark":window.matchMedia("(prefers-color-scheme:dark)").matches;d.setAttribute("data-theme",dark?"light":"dark")};
+</script>
+</body>
+</html>
